@@ -1,13 +1,13 @@
 # Aurora bootloader; ordinary updates refresh ESP Stage 2, never enroll Stage 1.
 pkgname=aura
-pkgver=1.0.0b10
+pkgver=1.0.0b13
 pkgrel=1
 pkgdesc='Aurora Silicon bootloader for Apple Silicon'
 arch=('aarch64')
 groups=('aurora-platform-apple-silicon')
 url='https://github.com/aurora-silicon/aura'
 license=('MIT' 'GPL-2.0-only')
-_commit=21a70e6e210b7a562c2526c25d2ae334d5eb90e4
+_commit=229ade95b121155e2861d639a7a59c53bbe359d2
 # 1 once the pinned source has no monitor (aura#77); prepare() checks it. Such an
 # aura moves the kernel into the CTXR window, so it requires a kernel built with
 # CONFIG_ARM64_CTXR_EXECMEM, which linux-aurora provides as aurora-ctxr-execmem.
